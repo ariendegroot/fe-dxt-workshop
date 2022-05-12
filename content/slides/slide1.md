@@ -1,25 +1,28 @@
 ---
 title: Workshop stap 1
-date: 2021-01-14
-slug: slide1
+date: 2021-05-13
+slug:  workshop-stap-0
 slide: 1
 ---
 
 ## Introductie
-- SSG
-- JAMstack
-- Headless
+
+### Thema's en trends
+- Static Site Generation (SSG)
+- JAMSTACK <https://jamstack.org>
+- Headless 
 - Deployment
 
 <br />
 <br />
 
 ### Doel van vandaag
-Maak een klein FE projectje en deploy die naar een CDN. 
+Maak een klein FE projectje en deploy die naar een CDN. <br><br>
 Enkele voorbeelden:
-- Bijvoorbeeld een persoonlijke blog, 
+- Een persoonlijke blog 
 - FE DXT community page
-- een fanpage van je favoriete TV serie etc.
-- Of kickstart hiermee dat ene idee waar je al zo lang mee rond loopt
+- een fanpage van je favoriete Serie
+- Of... kickstart hiermee dat ene idee waar je al zo lang mee rond loopt
 
-Maak hierbij gebruik van lokale markdown files in je GIT repo of kies evt. een fancy nieuw CMS zoals bijvoorbeeld Prepr, Contentstack, Contentful, Storyblok
+<br>
+Gebruik voor je content lokale markdown files in je GIT repo of kies eventueel een fancy headless CMS zoals bijvoorbeeld Prepr, Contentstack, Contentful, Storyblok etc.
