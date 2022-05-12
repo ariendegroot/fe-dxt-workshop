@@ -33,8 +33,13 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/eslint
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/vuetify'
   ],
+
+  vuetify: {
+    optionsPath: './vuetify.options.js'
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -42,8 +47,19 @@ export default {
     '@nuxt/content'
   ],
 
+  generate: {
+    async routes () {
+      const { $content } = require('@nuxt/content')
+      const files = await $content().only(['path']).fetch()
+
+      return files.map(file => (file.path === '/index' ? '/' : file.path))
+    }
+  },
+
   // Content module configuration: https://go.nuxtjs.dev/config-content
-  content: {},
+  content: {
+    fullTextSearchFields: ['title', 'description']
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
