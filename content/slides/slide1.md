@@ -5,7 +5,7 @@ slug:  workshop-stap-0
 slide: 1
 ---
 
-## Introductie
+## Introductie van vandaag
 
 ### Thema's en trends
 - Static Site Generation (SSG)

@@ -16,7 +16,6 @@
               show-arrows-on-hover
               delimiter-icon="mdi-minus"
               height="70vh"
-              @keydown.native="handleLeft($event)"
             >
               <v-carousel-item v-for="(slide, i) in slides" :key="i" color="white">
                 <v-sheet color="white" height="100%" tile class="pa-8">
